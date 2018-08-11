@@ -1,0 +1,38 @@
+<!--pages/weather/weather.wxml-->
+<view class='main'>
+  <view class="top">
+    <image src="../img/bg11.png"></image> 
+    <view class="wdu">{{du}}℃</view>
+    <view class="yun">{{yun}}</view>
+    <view class="city">{{city}}</view>
+    <view class="date">{{date}}</view>
+    <view class="zhou">{{zhou}}</view>
+  </view>
+  <view class="cen">
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="cen1" >
+        <view class="cen2">{{item.date}}</view>
+        <view class="cen2">{{item.tem}}</view>
+        <view class="img"><image src="{{item.dayurl}}"></image></view>
+        <view class="cen2">{{item.weather}}</view>
+        <view class="cen2">{{item.wind}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="foot">
+    <block wx:for="{{clist}}" wx:key="index">
+      <view class="f1">
+        <image src="{{item.imgurl}}"></image>
+        <view class="p1">
+          <view class="p2">{{item.tipt}}　{{item.zs}}</view>
+          <view class="p3">{{item.des}}</view>
+        </view>
+      </view>
+    </block>
+
+  </view>
+</view>
+
+
+
+

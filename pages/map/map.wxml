@@ -1,0 +1,18 @@
+<!--pages/map/map.wxml-->
+<view class="main" style="width: 100%; height:{{winHeight+'px'}};">
+  <view class="top"> 
+     <input type="text" placeholder='搜索地点'  confirm-type="search" bindconfirm="ok" bindinput="bindKeyInput" bindblur="lost" bindfocus="bfocus"></input>
+  </view>
+  <block wx:if="{{ismap}}">
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" show-location></map>
+  </block>
+  <block wx:else>
+    <view class="maplist">
+    <view data-m="{{item}}" wx:for='{{sugData}}' wx:key="index" bindtap='danji'>{{item}}</view>
+  </view>
+  </block>
+</view>
+
+
+
+

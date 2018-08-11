@@ -1,0 +1,108 @@
+/* pages/weather/weather.wxss */
+.main{
+  background: #3FA7E6;
+}
+
+.top{
+  height:600rpx;
+  width:100%;
+  position: relative;
+}
+.top image{
+  width:100%;
+  height:100%;
+}
+.top .wdu{
+  position: absolute;
+  top:10%;
+  left:10%;
+  font-size:50px;
+  color:#fff;
+}
+.top .city{
+  position: absolute;
+  top:10%;
+  right:5%;
+  font-size:32rpx;
+  color:#fff;
+}
+.top .date{
+  position: absolute;
+  top:20%;
+  right:5%;
+  font-size:32rpx;
+  color:#fff;
+}
+.top .yun{
+  position: absolute;
+  top:33%;
+  left:10%;
+  font-size: 30rpx;
+  color:#fff;
+}
+.top .zhou{
+  position: absolute;
+  top:32%;
+  right: 5%;
+  font-size:32rpx;
+  color:#fff;
+}
+.cen{
+  width:100%;
+  height:150px;
+  background: #3B9FDB;
+display:flex;
+}
+.cen .cen1{
+  flex: 1;
+}
+.cen .cen1 .cen2{
+  font-size:26rpx;
+  line-height: 30px;
+  color:#fff;
+  text-align: center;
+}
+.cen .cen1 .img{
+  display: flex;
+  justify-content:center;
+align-items :center;
+}
+.cen .cen1 .img image{
+  width:72rpx;
+  height: 60rpx;
+  margin:0 auto;
+}
+
+.foot{
+ background: #3B9FDB;
+ width:100%;
+ box-sizing: border-box;
+ padding:0 30rpx 20rpx;
+ margin-top:20rpx;
+}
+.foot .f1{
+  padding:15rpx 0;
+  display: flex;
+  border-bottom:1px solid #59B0E6;
+  align-items :center;
+}
+.foot .f1 image{
+  width:80rpx;
+  height:80rpx;
+}
+.foot .f1 .p1{
+  flex: 1;
+ padding-left:20rpx;
+}
+
+.foot .f1 .p2{
+  font-size: 32rpx;
+  color:#fff;
+  line-height: 20px;
+
+}
+.foot .f1 .p3{
+  font-size: 26rpx;
+  color:#fff;
+  margin-top:10rpx;
+}
